@@ -4,7 +4,7 @@
   ##### 2.可完全填充绘制图形
 #### 调用方式：
   ```
-    new Radar({
+  const radar = new Radar({
       canvasId: 'radarCanvas', // dom
       colors, // 绘制的颜色 []
       width: 260, // 绘制宽度
@@ -13,4 +13,6 @@
       data: countArr.reverse(), // 绘制数据比例
       initrad: initrad, // 绘制角度
     });
+    
+   radar.init(callBack) // 回调功能仅真机支持
   ```
